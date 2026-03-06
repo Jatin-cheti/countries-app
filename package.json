@@ -4,8 +4,8 @@
   "description": "![Design preview for the REST Countries API with color theme switcher coding challenge](preview.jpg)",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel index.html --open",
-    "build": "parcel build index.html --public-url ./"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "keywords": [],
   "author": "",
