@@ -1,0 +1,18 @@
+:root,
+[data-theme="light"] {
+  --background: hsl(0, 0%, 99%);
+  --elements: hsl(0, 100%, 100%);
+  --text: hsl(200, 15%, 8%);
+  --input: hsl(0, 0%, 50%);
+  --skeleton-base: hsl(0, 0%, 88%);
+  --skeleton-highlight: hsl(0, 0%, 96%);
+}
+
+[data-theme="dark"] {
+  --background: hsl(207, 26%, 17%);
+  --elements: hsl(209, 23%, 22%);
+  --text: white;
+  --input: hsl(0, 0%, 70%);
+  --skeleton-base: hsl(209, 23%, 28%);
+  --skeleton-highlight: hsl(209, 23%, 38%);
+}

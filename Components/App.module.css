@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Nunito, sans-serif;
+}
+
+main, header {
+    background-color: var(--background);
+    color: var(--text);
+}
+
+.main {
+    min-height: calc(100vh - 73px);
+}

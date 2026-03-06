@@ -1,0 +1,27 @@
+.countries-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: flex-start;
+  padding: 20px 80px 60px;
+}
+
+.loading,
+.no-results {
+  padding: 40px 80px;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+@media (max-width: 768px) {
+  .countries-list {
+    gap: 30px;
+    padding: 20px 24px 40px;
+    justify-content: center;
+  }
+
+  .loading,
+  .no-results {
+    padding: 20px 24px;
+  }
+}

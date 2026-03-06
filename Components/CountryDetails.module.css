@@ -1,0 +1,152 @@
+.container {
+  padding: 40px 80px 60px;
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.backBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 32px;
+  background-color: var(--elements);
+  color: var(--text);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: inherit;
+  margin-bottom: 64px;
+  transition: opacity 0.15s ease;
+}
+
+.backBtn:hover {
+  opacity: 0.75;
+}
+
+/* ── Detail row ─────────────────────────────────── */
+.detail {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.flag {
+  width: 45%;
+  max-width: 560px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+/* ── Info column ─────────────────────────────────── */
+.info {
+  flex: 1;
+  min-width: 0;
+}
+
+.countryName {
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin: 0 0 28px;
+}
+
+.infoColumns {
+  display: flex;
+  gap: 60px;
+  margin-bottom: 48px;
+}
+
+.infoCol {
+  flex: 1;
+}
+
+.infoCol p {
+  margin: 8px 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.label {
+  font-weight: 600;
+}
+
+/* ── Border Countries ────────────────────────────── */
+.borders {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.borderTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.borderTag {
+  display: inline-block;
+  padding: 5px 20px;
+  background-color: var(--elements);
+  color: var(--text);
+  text-decoration: none;
+  border-radius: 3px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+  font-size: 13px;
+  white-space: nowrap;
+  transition: opacity 0.15s ease;
+}
+
+.borderTag:hover {
+  opacity: 0.75;
+}
+
+.status {
+  padding: 40px 80px;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+/* ── Mobile ──────────────────────────────────────── */
+@media (max-width: 768px) {
+  .container {
+    padding: 28px 20px 48px;
+  }
+
+  .backBtn {
+    margin-bottom: 40px;
+  }
+
+  .detail {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 36px;
+  }
+
+  .flag {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .countryName {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+
+  .infoColumns {
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 32px;
+  }
+
+  .borders {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .status {
+    padding: 24px 20px;
+  }
+}

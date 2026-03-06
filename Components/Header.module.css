@@ -1,0 +1,64 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: var(--elements);
+  color: var(--text);
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Nunito Sans", sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.toggle-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.toggle-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  width: 100%;
+  max-width:50px;
+  min-height:50px;
+  border: 0px solid transparent;
+  background: none;
+}
+
+.icon {
+  font-size: 4rem;
+  font-weight: bold;
+  
+}
+
+.sun-icon {
+  color: var(--text);
+}
+
+.moon-icon {
+  color: var(--text);
+}
+
+.toggle-text{
+  font-size: 1rem;
+  color: var(--text);
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 16px 20px;
+    font-size: 1rem;
+  }
+
+  .icon {
+    font-size: 2.5rem;
+  }
+}
